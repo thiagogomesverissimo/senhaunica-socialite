@@ -76,4 +76,7 @@ return [
     'codigoUnidade' => env('SENHAUNICA_CODIGO_UNIDADE'),
 
     // SENHAUNICA_KEY e SENHAUNICA_SECRET são carregados em services.php da biblioteca
+
+    // Essa biblioteca permite o cadastramento de usuários locais?
+    'usuariosLocais' => env('SENHAUNICA_USUARIOS_LOCAIS', false),
 ];

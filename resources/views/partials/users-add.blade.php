@@ -3,6 +3,13 @@
   <i class="fas fa-plus"></i> Adicionar/Assumir
 </button>
 
+@if(config('senhaunica.usuariosLocais'))
+<button class="btn btn-sm btn-outline-primary senhaunicaUseraddBtn"
+  @if (!hasReplicado()) disabled title="Necessário Replicado para adicionar usuários" @endif>
+  <i class="fas fa-plus"></i> Adicionar/Assumir
+</button>
+@endif
+
 <div class="modal fade" id="senhaunica-socialite-adicionar-pessoas-modal" tabindex="-1">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
